@@ -1,0 +1,249 @@
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  position: sticky;
+  top: 0;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(20px);
+  background-color: transparent; 
+  z-index: 1000; 
+}
+
+.header a img{
+  width: 50px;
+  mix-blend-mode: color-burn;
+  margin-top: 20px;
+}
+
+.scrolled {
+  background-color: rgba(255, 255, 255, 0.26);
+  padding: 0 10px;
+  border-radius: 0 0px 10px 10px;
+  
+}
+
+.header div ul{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 450px;
+
+
+}
+
+.header div ul a:first-child{
+ margin-left: 30px;
+}
+
+.header div ul a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.1rem;
+  font-family: "vazirNormal";
+}
+
+.header div ul a:hover{
+color: #0198df;
+transition: all 0.3s ease;
+}
+
+.header .resume a{
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.1rem;
+  font-family: "vazirNormal";
+  background-color: #045d86;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.header .resume a svg{
+font-size: 1.7rem;
+position: relative;
+top: 10px;
+}
+
+.header .resume a:hover{
+  opacity: 0.8;
+}
+
+
+
+.hamburger {
+display: none; /* مخفی شده در صفحه‌های بزرگ */
+cursor: pointer;
+flex-direction: column;
+justify-content: space-between;
+height: 24px;
+width: 30px;
+margin: 10px 20px;
+}
+
+.hamburger .line {
+height: 4px;
+background-color: #fff;
+border-radius: 2px;
+}
+
+.footer {
+background-color: #222;
+color: #fff;
+padding: 20px 0;
+font-family: 'vazirNormal';
+text-align: center;
+
+border-top: 2px solid #0198df;
+}
+
+.footerSection {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-bottom: 20px;
+}
+
+.footerSection h3 {
+font-size: 1.4rem;
+font-weight: 600;
+color: #0198df;
+margin-bottom: 10px;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+
+.footerSection p {
+font-size: 1rem;
+color: #bbb;
+line-height: 1.5;
+margin-bottom: 10px;
+}
+
+.footerSection ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.footerSection ul li {
+margin: 5px 0;
+}
+
+.footerSection ul li a {
+color: #ccc;
+text-decoration: none;
+font-size: 1rem;
+transition: color 0.3s ease;
+}
+
+.footerSection ul li a:hover {
+color: #0198df;
+
+}
+
+.socialIcons {
+margin-top: 15px;
+}
+
+.socialIcons a {
+margin: 0 12px;
+font-size: 1.8rem;
+color: #fff;
+transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socialIcons a:hover {
+color: #0198df;
+transform: scale(1.1);
+}
+
+.footerBottom {
+margin-top: 20px;
+font-size: 0.9rem;
+color: #777;
+}
+
+
+@media (max-width: 768px) {
+.footer {
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer .footer-section {
+  width: 100%;
+  margin-bottom: 20px;
+}
+}
+
+@media (max-width: 768px) {
+.footer {
+  font-size: 0.9rem;
+  padding: 15px;
+}
+}
+
+
+@media (max-width: 768px) {
+.header div ul {
+
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  
+}
+
+.header div ul a {
+  margin-left: 0;
+  padding: 10px 0;
+  
+ 
+}
+
+
+
+}
+
+
+/* Media Query برای موبایل */
+@media (max-width: 768px) {
+.header div ul {
+  display: none; /* مخفی کردن منو در حالت موبایل */
+  width: 100%;
+  transition: all 0.3s ease;
+  flex-direction: column;
+  background-color: rgba(89, 161, 255, 0.521); /* پس‌زمینه منو */
+  backdrop-filter: blur(20px);
+  position: absolute;
+  top: 60px; /* فاصله از بالا */
+  left: 0;
+  right: 0;
+  padding: 20px;
+}
+
+
+
+.header div ul.open {
+  display: flex; 
+}
+
+.hamburger {
+  display: flex; /* نمایش همبرگر در موبایل */
+}
+.header .resume a{
+  margin: 10px 20px;
+
+
+}
+
+.scrolled{
+  padding: 15px;
+}
+
+}
+

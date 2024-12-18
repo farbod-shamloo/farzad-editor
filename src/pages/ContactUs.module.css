@@ -1,0 +1,163 @@
+.contactContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background: url('https://www.example.com/your-background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    min-height: 100vh;
+   
+    /* فیلتر تار را حذف کردیم */
+    font-family: "vazirNormal";
+  }
+  
+  .contactContent {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out, scaleUp 0.8s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scaleUp {
+    from {
+      transform: scale(0.9);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  
+  .title {
+    font-size: 3rem;
+    color: #0077b6;
+    margin-bottom: 10px;
+    font-weight: bold;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    color: #444;
+    margin-bottom: 30px;
+    opacity: 0.7;
+  }
+  
+  .inputGroup {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .inputGroup label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+    text-align: right;
+  }
+  
+  .inputGroup input,
+  .inputGroup textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    margin-top: 5px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: "vazirNormal";
+  }
+  
+  .inputGroup input:focus,
+  .inputGroup textarea:focus {
+    border-color: #00b4d8;
+    box-shadow: 0 0 10px rgba(0, 180, 216, 0.5);
+    outline: none;
+  }
+  
+  .submitButton {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #00b4d8;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .submitButton:hover {
+    background-color: #0077b6;
+    transform: translateY(-5px);
+  }
+  
+  .successMessage {
+    background-color: #28a745;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .socialLinks {
+    margin-top: 30px;
+  }
+  
+  .socialLinks p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    opacity: 0.8;
+  }
+  
+  .icons a {
+    font-size: 2.5rem;
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .icons a:hover {
+    color: #00b4d8;
+    transform: scale(1.1);
+  }
+  
+  @media (max-width: 768px) {
+    .contactContainer {
+      padding: 30px 15px;
+    }
+  
+    .contactContent {
+      padding: 30px;
+    }
+  
+    .inputGroup input,
+    .inputGroup textarea {
+      font-size: 1rem;
+    }
+  
+    .submitButton {
+      font-size: 1rem;
+    }
+  }
+  

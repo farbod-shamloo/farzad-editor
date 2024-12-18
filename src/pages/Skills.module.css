@@ -1,0 +1,248 @@
+.container{
+    margin-top: 100px;
+}
+
+.container div{
+    text-align: center;
+}
+
+.container .softBox {
+  position: relative;
+}
+
+.container .softBox .sb{
+  position: absolute;
+  top: -50px; 
+  right: 0;
+}
+
+.container .softBox .camera{
+  width: 200px;
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+
+.container div h2{
+    font-family: "vazirNormal";
+    font-size: 2.5rem;
+    color: #0198df;
+    text-shadow: 
+      0 0 5px #0198df, 
+      0 0 10px #0198df, 
+      0 0 20px #0198df, 
+      0 0 40px #1073b6, 
+      0 0 80px #1073b6, 
+      0 0 90px #1073b6;
+    animation: neon-flicker 1.5s infinite alternate;
+    margin-top: 0px;
+    line-height: 100px;
+  }
+  
+  @keyframes neon-flicker {
+    0% { text-shadow: 0 0 5px #0198df, 0 0 10px #0198df, 0 0 20px #0198df; }
+    50% { text-shadow: 0 0 10px #0198df, 0 0 20px #1073b6, 0 0 40px #1073b6; }
+    100% { text-shadow: 0 0 20px #1073b6, 0 0 40px #0198df, 0 0 80px #1073b6; }
+  
+    
+  }
+
+  .container div p{
+    color: #fff;
+    font-family: "vazirNormal";
+    font-size: 1.5rem;
+  }
+
+  .carts{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+    /* border: 2px solid #fff; */
+    box-shadow: rgba(43, 117, 255, 0.56) 0px 22px 70px 4px;
+    border-radius: 20px;
+    padding:20px 10px;
+   
+  }
+
+  .cart{
+    background-color: #ffffff17;
+    width: 20%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  }
+
+  
+
+  .cart img {
+    width: 120px;
+  }
+
+  .cart img:hover{
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+  }
+
+  .cart .pr{
+    font-family: "vazirNormal";
+    font-size: 2.5rem;
+    color: #9529fa;
+    text-shadow: 
+      0 0 5px #4c0b77, 
+      0 0 10px #4c0b77, 
+      0 0 20px #4c0b77, 
+      0 0 40px #874697, 
+      0 0 80px #874697, 
+      0 0 90px #874697;
+    animation: neon-flicke 1.5s infinite alternate;
+    margin-top: 0px;
+    line-height: 100px;
+  }
+  
+  @keyframes neon-flicke {
+    0% { text-shadow: 0 0 5px #4c0b77, 0 0 10px #4c0b77, 0 0 20px #4c0b77; }
+    50% { text-shadow: 0 0 10px #4c0b77, 0 0 20px #874697, 0 0 40px #874697; }
+    100% { text-shadow: 0 0 20px #874697, 0 0 40px #4c0b77, 0 0 80px #874697; }
+  
+    
+  }
+
+  .cart .ae{
+    font-family: "vazirNormal";
+    font-size: 2.5rem;
+    color: #7215c9;
+    text-shadow: 
+      0 0 5px #4c0b77, 
+      0 0 10px #4c0b77, 
+      0 0 20px #4c0b77, 
+      0 0 40px #874697, 
+      0 0 80px #874697, 
+      0 0 90px #874697;
+    animation: neon-flicke 1.5s infinite alternate;
+    margin-top: 0px;
+    line-height: 100px;
+  }
+  
+  @keyframes neon-flicke {
+    0% { text-shadow: 0 0 5px #4c0b77, 0 0 10px #4c0b77, 0 0 20px #4c0b77; }
+    50% { text-shadow: 0 0 10px #4c0b77, 0 0 20px #874697, 0 0 40px #874697; }
+    100% { text-shadow: 0 0 20px #874697, 0 0 40px #4c0b77, 0 0 80px #874697; }
+  
+    
+  }
+
+  .cart .ps{
+    font-family: "vazirNormal";
+    font-size: 2.5rem;
+    color: #0198df;
+    text-shadow: 
+      0 0 5px #0198df, 
+      0 0 10px #0198df, 
+      0 0 20px #0198df, 
+      0 0 40px #1073b6, 
+      0 0 80px #1073b6, 
+      0 0 90px #1073b6;
+    animation: neon-flicker 1.5s infinite alternate;
+    margin-top: 0px;
+    line-height: 100px;
+  }
+  
+  @keyframes neon-flicker {
+    0% { text-shadow: 0 0 5px #0198df, 0 0 10px #0198df, 0 0 20px #0198df; }
+    50% { text-shadow: 0 0 10px #0198df, 0 0 20px #1073b6, 0 0 40px #1073b6; }
+    100% { text-shadow: 0 0 20px #1073b6, 0 0 40px #0198df, 0 0 80px #1073b6; }
+  
+    
+  }
+
+  .com img{
+    width: 600px;
+    margin-top: 95px;
+  }
+
+
+  
+  
+/* استایل‌های ریسپانسیو */
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-top: 50px;
+  }
+
+  .carts {
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 10px;
+    width: calc(90% - 20px);
+    margin: 50px auto;
+  }
+
+  .cart {
+    width: 45%; /* کاهش عرض کارت‌ها */
+    margin-bottom: 20px; /* فاصله بین کارت‌ها */
+    border-radius: 10px;
+  }
+
+  .cart img {
+    width: 100px; /* کاهش سایز تصاویر */
+  }
+
+  .cart .pr,
+  .cart .ae,
+  .cart .ps {
+    font-size: 2rem; /* کاهش اندازه فونت */
+  }
+
+  .com img {
+    width: 500px; /* کاهش سایز تصویر */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container div h2 {
+    font-size: 2rem; /* کاهش اندازه عنوان */
+    line-height: 80px;
+  }
+
+  .container div p {
+    font-size: 1.2rem; /* کاهش اندازه توضیحات */
+  }
+
+  .cart {
+    width: 90%; /* کارت‌ها تمام عرض شوند */
+  }
+
+  .cart img {
+    width: 80px; /* کاهش بیشتر سایز تصاویر */
+  }
+
+  .com img {
+    width: 400px; /* کاهش سایز تصویر */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container div h2 {
+    font-size: 1.5rem; /* کاهش بیشتر اندازه عنوان */
+  }
+
+  .container div p {
+    font-size: 1rem; /* کاهش بیشتر اندازه توضیحات */
+  }
+
+  .cart img {
+    width: 60px; /* کاهش سایز تصاویر */
+  }
+
+  .com img {
+    width: 300px; /* کاهش سایز تصویر */
+  }
+
+  .sb{
+    display: none;
+  }
+
+  .camera{
+    display: none;
+  }
+}

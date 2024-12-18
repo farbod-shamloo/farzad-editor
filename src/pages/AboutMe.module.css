@@ -1,0 +1,123 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin-top: 60px;
+}
+
+.container .right img {
+    width: 600px;
+    /* border-radius: 50%; */
+    margin-top: 50px;
+}
+.container .right{
+    width: 50%;
+}
+
+.name{
+    
+   width: 340px;
+}
+
+.left{
+    width: 40%;
+    margin-left: 70px;
+}
+
+.left p{
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: justify;
+    line-height: 40px;
+    margin-top: 30px;
+     text-shadow: rgb(0, 132, 255) 1px 0 10px;
+    padding:20px 0;
+    border-radius: 10px;
+}
+
+.left .name h1 {
+    font-family: "VazirNormal";
+    /* padding: 0 20px; */
+    font-size: 3rem;
+    color: #59b4ff;
+    text-shadow: rgb(0, 110, 255) 1px 0 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    direction: rtl; /* راست‌چین کردن متن */
+    border-left: 2px solid #2e43a0; /* نشانگر به چپ منتقل می‌شود */
+    animation: typing 4s steps(30, end) infinite, cursor 0.5s steps(2) infinite;
+  }
+  
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    50% {
+      width: 100%; /* متن کامل نمایش داده می‌شود */
+    }
+    100% {
+      width: 0; /* متن پاک می‌شود */
+    }
+  }
+  
+  @keyframes cursor {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+
+  @media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* نمایش عمودی در موبایل */
+        align-items: center;
+        width: calc(90% - 20px);
+        margin: 60px auto 0;
+    }
+
+    .container .right {
+        width: 100%; /* تصویر تمام عرض */
+    }
+
+    .container .right img {
+        max-width: 500px;
+        border-radius: 10px; /* حداکثر عرض تصویر کاهش یابد */
+        margin-right: 15%;
+    }
+
+    .left {
+        width: 90%; /* متن عرض بیشتری بگیرد */
+        margin-left: 0;
+    }
+
+    .left .name h1 {
+        font-size: 1.8rem; /* کوچک‌تر کردن عنوان */
+        margin-top: 20px;
+        animation: typing 0s steps(30, end) infinite, cursor 0.5s steps(2) infinite;
+        border-left: none;
+    }
+
+    .left p {
+        font-size: 1rem; /* کوچک‌تر کردن متن پاراگراف */
+        font-weight: 700;
+        line-height: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container .right img {
+        max-width: 300px; /* کاهش بیشتر عرض تصویر در موبایل */
+    }
+
+    .left .name  {
+        font-size: 1.5rem; /* متن باز هم کوچک‌تر شود */
+        text-align: center;
+    }
+
+    .left p {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
